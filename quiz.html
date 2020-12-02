@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="bt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP3 </title>
+    <link rel="stylesheet" href="style.css">>
+</head>
+<body>
+    <header>
+        <h1>Jogo - Quiz</h1>
+    </header>
+    <section>
+        <div class="inicio-box custom-box">
+            <center>
+                <img id="imagem" src="fundo2.png" title="Trofeu" alt="Trofeu" width4300px height="400px"/>
+           
+            <h3>Instuções:</h3>
+            <p>Total de Perguntas: <span class="total-questao"></span></p> 
+            <button type="button" class="btn" onclick="inicioQuiz()">Inicio do Quiz</button>
+        </center>
+        </div>
+        <div class="quiz-box custom-box hide">
+            <div class="questao-num img">
+                
+            </div>
+            <div class="questao-txt">
+                
+            </div>
+            <div class="opcao-principal">
+                
+            </div>
+            <div class="avanca-questao-btn">
+                <button type="button" class="btn" onclick="avanca()">Avança</button>
+            </div>
+            <div class="answers-indicador">
+                
+            </div>
+        </div>
+
+        <div class="res-box custom-box hide ">
+            <h1>Resultado do Quiz</h1>
+            <table>
+                <tr>
+                    <td>Total das Respostas</td>
+                    <td><span class="total-resposta"></span></td>
+                </tr>
+                <tr>
+                    <td>Não Respondidas</td>
+                    <td><span class="total-tentativas"></span></td>
+                </tr>
+                <tr>
+                    <td>Respostas Corretas</td>
+                    <td><span class="total-correta"></span></td>
+                </tr>
+                <tr>
+                    <td>Respostas Erradas</td>
+                    <td><span class="total-errada"></span></td>
+                </tr>
+                <tr>
+                    <td>Porcentagem</td>
+                    <td><span class="porcentagem"></span></td>
+                </tr>
+                <tr>
+                    <td>Pontuação Total</td>
+                    <td><span class="total"></span></td>
+                </tr>
+            </table>
+            <button type="button" class='btn' onclick="tentarNovamenteQuiz()">Tentar Novamente</button>
+            <button type="button" class='btn' onclick="voltaInicio()">Voltar ao  Início</button>
+        </div>
+    </section>
+    <footer>
+        <p class="a" >&copy; AP3 - Prática de programação em Sistema Web </p>
+    </footer>
+    <script src="questao.js "></script>
+    <script src="app.js"></script>
+</body>
+</html>
